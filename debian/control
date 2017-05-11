@@ -1,0 +1,14 @@
+Source: pid1
+Section: admin
+Priority: optional
+Maintainer: Tomas Mazak <tomas.mazak@rackspace.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/tomas-mazak/pid1
+
+Package: pid1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight PID1 implementation for Docker containers
+  Lightweight PID1 implementation for Docker containers. Based on
+  Rich Felker's proposal for correct PID1 process: http://ewontfix.com/
